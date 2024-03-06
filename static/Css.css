@@ -1,0 +1,40 @@
+        .alargar {
+            width: 500px;
+        }
+
+        textarea {
+            width: 500px;
+            height: 100px;
+        }
+
+        legend {
+            text-decoration: underline;
+        }
+        #Blue{
+            background-color: aqua;
+        }
+        #Pink{
+            background-color: pink;
+        }
+        #Yellow{
+            background-color: yellow;
+        }
+        #Green{
+            background-color: green;
+        }
+        #WeirdBrown{
+            background-color: darkgray;
+        }
+        #Orange{
+            background-color: orange;
+        }
+        #Red{
+            background-color: red;
+        }
+        #Black{
+            background-color: rebeccapurple;
+        }
+        h1{
+            text-align: center;
+        }
+        

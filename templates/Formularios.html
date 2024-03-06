@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joao Paulo">
+    <meta name="description" content="Mi Formulario">
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="Css.css">
+
+    <style>
+        .alargar {
+            width: 500px;
+        }
+
+        textarea {
+            width: 500px;
+            height: 100px;
+        }
+
+        legend {
+            text-decoration: underline;
+        }
+        #Blue{
+            background-color: aqua;
+        }
+        #Pink{
+            background-color: pink;
+        }
+        #Yellow{
+            background-color: yellow;
+        }
+        #Green{
+            background-color: green;
+        }
+        #WeirdBrown{
+            background-color: darkgray;
+        }
+        #Orange{
+            background-color: orange;
+        }
+        #Red{
+            background-color: red;
+        }
+        #Black{
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post">
+        <fieldset id="Blue">
+            <legend>Dades Personals</legend>
+            <p>
+                <label for="idedad">Edad*</label>
+                <br>
+                <input type="number" id="idedad" name="edad" placeholder="Inserta tu edad" required>
+                <br>
+                <label for="idemail">Email</label>
+                <br>
+                <input class="alargar" type="email" id="idemail" name="email">
+                <br>
+                <label for="idcontraseña">Contraseña*</label>
+                <br>
+                <input class="alargar" type="password" id="idcontraseña" name="contraseña"
+                    placeholder="Inserta tu contraseña" required>
+                <br>
+                <label for="iddata">Data de nacimiento</label>
+                <br>
+                <input type="date" id="iddata" name="data">
+                <br>
+                <br>
+                <a>* Campos obligatorios</a>
+            </p>
+        </fieldset>
+        <fieldset id="Pink">
+            <legend>Animal</legend>
+            <select name="Modulos">
+                <option hidden>Seleccionad</option>
+                <option>perro</option>
+                <option>gato</option>
+                <option>babuino</option>
+                <option>gato2</option>
+                <option>perro3</option>
+            </select>
+        </fieldset>
+        <fieldset id="Yellow">
+            <legend>Genero</legend>
+            <input type="radio" id="Opcion1" name="grupo1" value="1">
+            <label for="Opcion1">masculino</label>
+            <input type="radio" id="Opcion2" name="grupo1" value="2">
+            <label for="Opcion2">femenino</label>
+            <input type="radio" id="Opcion3" name="grupo1" value="3">
+            <label for="Opcion3">avion</label>
+            <input type="radio" id="Opcion4" name="grupo1" value="4">
+            <label for="Opcion4">helicoptero</label>
+        </fieldset>
+        <fieldset id="Green">
+            <legend>Nombre de tu mascota</legend>
+            <label for="idprof">nombre mascota*</label>
+            <br>
+            <input class="alargar" type="text" id="idprof" name="Profesor" placeholder="Inserta el Nombre" required>
+            <br>
+            <label for="rango">Indica tu grado de satisfaccion del 0 al 10:</label>
+            <br>
+            <input id="rango" type="range" min="0" max="10">
+            <br>
+            <label>Comentarios</label>
+            <br>
+            <textarea> Inserta tus comentarios</textarea>
+        </fieldset>
+        <fieldset id="WeirdBrown">
+            <legend>Explica algo sobre ti</legend>
+            <label>Eres gei?</label>
+            <br>
+            <input type="checkbox" id="Si2" name="Si2" value="1">
+            <label for="Si2">Si</label>
+            <input type="checkbox" id="No2" name="No2" value="2">
+            <label for="No2">No</label>
+            <br>
+            <label for="color">Color de piel</label>
+            <br>
+            <input type="color" id="color">
+            <br>
+            <label for="direccionweb">Pagina web favorita</label>
+            <br>
+            <input type="url" id="direccionweb" name="web">
+            <br>
+            <label>Situacion actual</label>
+            <br>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+              <option value="Aburrido">
+              <option value="Triste">
+              <option value="Deprimido">
+              <option value="Estresado">
+              <option value="Camello">
+            </datalist>
+            <br>
+            <br>
+            <input type="file">
+        </fieldset>
+        <fieldset id="Orange">
+            <legend>Aficiones</legend>
+            <input type="checkbox" id="CloudC" name="CloudC" value="1">
+            <label for="CloudC">Bombardear Murcia</label>
+            <input type="checkbox" id="BigD" name="BigD" value="2">
+            <label for="BigD">Borbardear Madrid</label>
+            <input type="checkbox" id="Unity5" name="Unity5" value="2">
+            <label for="Unity5">Bombarden Renfe Cercanias</label>
+        </fieldset>
+
+        <fieldset id="Red">
+            <legend>Hora de la paja?</legend>
+            <label for="Fecha">Fecha:</label>
+            <input type="date" id="Fecha" name="Fecha">
+            <label for="Hora">Hora:</label>
+            <input type="time" id="Hora" name="Hora">
+        </fieldset>
+        <fieldset id="Black">
+            <input type="submit" value="Enviar" onclick="Alerta()">
+            <input type="reset" value="Borrar">
+            <input type="button" value="Salir" onclick="self.close()">
+        </fieldset>
+
+        <script>
+            function Alerta(){alert("Formulario Enviado")}
+        </script>
+    </form>
+</body>
+
+</html>
